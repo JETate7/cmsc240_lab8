@@ -4,7 +4,7 @@
 #include "Person.h"
 #include "Student.h"
 
-Student::Student() : Person() {}                      // explicitly call Person() on implementation
+Student::Student() : Person() {sch = null; fullTime = false; completeUnits = 0.0;}                      // explicitly call Person() on implementation
 Student::Student(const Student& other) : Person(other) {}  // call Person(other) on implementation
 Student::Student(int urid, std::string netid, std::string lname, std::string fname, 
                int dob_day, int dob_mo, int dob_yr, 
