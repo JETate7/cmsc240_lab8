@@ -3,7 +3,13 @@
 
 #include "Person.h"
 
-Person::Person() {}
+Person::Person() 
+  : URID(-1), netID(""), firstName(""), lastName(""), eMail(""), Address(""), Phone(0000000000)
+{
+  dateOfBirth.tm_mon = 0;
+  dateOfBirth.tm_day = 0;
+  dateOfBirth.tm_year = 0;
+}
 
 Person::Person(const Person& other) {}
 
