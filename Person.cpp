@@ -7,7 +7,7 @@ Person::Person()
   : URID(-1), netID(""), firstName(""), lastName(""), eMail(""), Address(""), Phone(0000000000)
 {
   dateOfBirth.tm_mon = 0;
-  dateOfBirth.tm_day = 0;
+  dateOfBirth.tm_mday = 1;
   dateOfBirth.tm_year = 0;
 }
 
@@ -21,7 +21,7 @@ Person::Person(const Person& other) {
   Phone = other.Phone;
   
   dateOfBirth.tm_mon = other.dateOfBirth.tm_mon;
-  dateOfBirth.tm_day = other.dateOfBirth.tm_day;
+  dateOfBirth.tm_mday = other.dateOfBirth.tm_day;
   dateOfBirth.tm_year = other.dateOfBirth.tm_year;
 }
 
@@ -37,7 +37,7 @@ Person::Person(int urid, std::string netid, std::string lname, std::string fname
   Phone = phone;
   
   dateOfBirth.tm_mon = dob_month;
-  dateOfBirth.tm_day = dob_day;
+  dateOfBirth.tm_mday = dob_day;
   dateOfBirth.tm_year = dob_year;
 }
 
@@ -55,7 +55,7 @@ long         Person::getPhone() {return Phone;}
 void Person::setFirstName(std::string fname) {firstName = fname;}
 void Person::setLastName(std::string lname) {lastName = lname;}
 void Person::setDateOfBirth(int day, int month, int year) {
-        dateOfBirth.tm_day = day;
+        dateOfBirth.tm_mday = day;
         dateOfBirth.tm_month = month-1;
         dateOfBirth.tm_year = year-1900;
 }
