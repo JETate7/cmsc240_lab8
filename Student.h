@@ -15,7 +15,7 @@ class Student : public Person
                 struct tm dateOfAdmit;
                 School sch;
                 bool fullTime;
-                double gpa;
+                double GPA;
                 double completeUnits;
                 std::list<std::string> courses;
         
