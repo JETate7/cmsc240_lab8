@@ -4,7 +4,7 @@
 #include "Person.h"
 #include "Student.h"
 
-Student::Student() : Person() {sch = null; fullTime = false; completeUnits = 0.0; gpa = 0.0; 
+Student::Student() : Person() {sch = null; fullTime = false; completeUnits = 0.0; GPA = 0.0; 
 	std::list<std::string> listCourse;
 	courses = listCourse;
 }                      // explicitly call Person() on implementation
@@ -21,7 +21,7 @@ Student::Student(int urid, std::string netid, std::string lname, std::string fna
 	sch = school;
 	fullTime = is_full_time;
 	completeUnits = units_completed;
-	gpa = grade;
+	GPA = grade;
 	courses = courseList;
 }
 Student::~Student() {}
