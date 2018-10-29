@@ -87,10 +87,12 @@ int main() {
 	s.clearCourses();
 	
 	cout << "Setting courses from a new course list and printing" << endl;
-	std::list<std::string> newCourses({"French", "Chemistry"});
+	list<string> newCourses();
+	newCourses.push_back("French");
+	newCourses.push_back("Chemistry");
 	cout <<"s.setCourses(newCourses);" << endl;
 	s.setCourses(newCourses);
-	cout << s.printCourses() << endl;
+	s.printCourses();
 	
         cout << "-------------------------" << endl;
         cout << "Testing overwrite: " << endl;
@@ -190,7 +192,7 @@ int main() {
 	cout << "Testing detailed constructor: " << endl;
 	cout << "-------------------------" << endl;
 
-	cout << "Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, {"Math", "Art"});" << endl;
+	cout << "Student s2(11111111, \"ab1cd\", \"last\", \"first\", 31, 10, 2018, \"abcd@richmond.edu\", \"123 happy lane\", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, {\"Math\", \"Art\"});" << endl;
 	Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, {"Math", "Art"});
 	
 	cout << "Testing getters on s2: " << endl;
