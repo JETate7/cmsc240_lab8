@@ -36,9 +36,9 @@ Person::Person(int urid, std::string netid, std::string lname, std::string fname
   Address = address;
   Phone = phone;
   
-  dateOfBirth.tm_mon = dob_month;
+  dateOfBirth.tm_mon = dob_month - 1;
   dateOfBirth.tm_mday = dob_day;
-  dateOfBirth.tm_year = dob_year;
+  dateOfBirth.tm_year = dob_year - 1900;
 }
 
 Person::~Person() {}
