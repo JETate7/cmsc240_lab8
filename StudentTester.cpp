@@ -88,8 +88,8 @@ int main() {
 	
 	cout << "Setting courses from a new course list and printing" << endl;
 	list<string> newCourses();
-	newCourses.push_back("French");
-	newCourses.push_back("Chemistry");
+	newCourses.push_front("French");
+	newCourses.push_front("Chemistry");
 	cout <<"s.setCourses(newCourses);" << endl;
 	s.setCourses(newCourses);
 	s.printCourses();
@@ -192,8 +192,12 @@ int main() {
 	cout << "Testing detailed constructor: " << endl;
 	cout << "-------------------------" << endl;
 
-	cout << "Student s2(11111111, \"ab1cd\", \"last\", \"first\", 31, 10, 2018, \"abcd@richmond.edu\", \"123 happy lane\", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, {\"Math\", \"Art\"});" << endl;
-	Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, {"Math", "Art"});
+	newCourses.clear();
+	newCourses.push_front("Art");
+	newCourses.push_front("Math");
+	
+	cout << "Student s2(11111111, \"ab1cd\", \"last\", \"first\", 31, 10, 2018, \"abcd@richmond.edu\", \"123 happy lane\", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, newCourses);" << endl;
+	Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, newCourses);
 	
 	cout << "Testing getters on s2: " << endl;
 
