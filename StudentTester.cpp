@@ -36,8 +36,8 @@ int main() {
 	cout << "s.setDateOfBirth(25, 12, 1990);" << endl;
 	s.setDateOfBirth(25, 12, 1990);
 	cout << "DateOfBirth (day): " << s.getDateOfBirth().tm_mday << " [25]" << endl;
-	cout << "DateOfBirth (month): " << s.getDateOfBirth().tm_mon <<  " [11] " << endl;
-	cout << "DateOfBirth (year): " << s.getDateOfBirth().tm_year << " [90] " <<endl;
+	cout << "DateOfBirth (month): " << s.getDateOfBirth().tm_mon <<  " [11]" << endl;
+	cout << "DateOfBirth (year): " << s.getDateOfBirth().tm_year << " [90]" <<endl;
 
 	cout << "s.setPhone(2014822829);" << endl;
 	s.setPhone(2014822829);
@@ -52,7 +52,7 @@ int main() {
  
 	cout << "s.setSchool(Student::LAW);" << endl;
 	s.setSchool(Student::LAW);
-	cout << "School: " << s.getSchool() << " []" << endl;
+	cout << "School: " << s.getSchool() << " [LAW]" << endl;
 	
 	cout << "s.setGPA(3.21);" << endl;
 	s.setGPA(3.21);
@@ -65,7 +65,8 @@ int main() {
 	cout << "s.setFullTimeStatus(false);" << endl;
 	s.setFullTimeStatus(false);
 	cout << "Full Time Status: " << s.getFullTimeStatus() << " [false]" << endl;
-	
+
+	cout << "-------------------------" << endl;
   	cout << "Testing Course methods: " << endl;
 	cout << "-------------------------" << endl;
   
@@ -90,9 +91,62 @@ int main() {
 	cout <<"s.setCourses(newCourses);" << endl;
 	s.setCourses(newCourses);
 	cout << s.printCourses() << endl;
+	
+        cout << "-------------------------" << endl;
+        cout << "Testing overwrite: " << endl;
+        cout << "-------------------------" << endl;
+	
+	cout << "s.setURID(56781234);" << endl;
+        s.setURID(56781234);
+        cout << "URID: " << s.getURID() << " [56781234]" << endl;
 
-	cout << "Testing overwrite: " << endl;
-	cout << "-------------------------" << endl;
+        cout << "s.setNetID(\"ab2ab\");" << endl;
+        s.setNetID("ab2ab");
+        cout << "NetID: " << s.getNetID() << " [ab2ab]" << endl;
+
+        cout << "s.setFirstName(\"John2\");" << endl;
+        s.setFirstName("John2");
+        cout << "First Name: " << s.getFirstName() << " [John2]" << endl;
+
+        cout << "s.setLastName(\"Doe2\");" << endl;
+        s.setLastName("Doe2");
+        cout << "Last Name: " << s.getLastName() << " [Doe2]" << endl;
+
+        cout << "s.setAddress(\"123 Road Ave\");" << endl;
+        s.setAddress("123 Road Ave");
+        cout << "Address: " << s.getAddress() << " [123 Road Ave]" << endl;
+
+        cout << "s.setDateOfBirth(20, 9, 1993);" << endl;
+        s.setDateOfBirth(25, 12, 1990);
+        cout << "DateOfBirth (day): " << s.getDateOfBirth().tm_mday << " [20]" << endl;
+        cout << "DateOfBirth (month): " << s.getDateOfBirth().tm_mon <<  " [8] " << endl;
+        cout << "DateOfBirth (year): " << s.getDateOfBirth().tm_year << " [93] " <<endl;
+
+        cout << "s.setPhone(213434534);" << endl;
+        s.setPhone(213434534);
+        cout <<"Phone: " << s.getPhone() << " [213434534]" << endl;
+	
+	cout << "s.setAdmitDate(1, 4, 2014);" << endl;
+	s.setAdmitDate(1, 4, 2014);
+	cout << "Admit Date (day): " << s.getAdmitDate().tm_mday << " [1]" << endl;
+	cout << "Admit Date (month): " << s.getAdmitDate().tm_mon << " [3]" << endl;
+	cout << "Admit Date (year): " << s.getAdmitDate().tm_year << " [114]" << endl;
+ 
+	cout << "s.setSchool(Student::RSB);" << endl;
+	s.setSchool(Student::RSB);
+	cout << "School: " << s.getSchool() << " [RSB]" << endl;
+	
+	cout << "s.setGPA(3.12);" << endl;
+	s.setGPA(3.12);
+	cout << "GPA: " << s.getGPA() << " [3.12]" << endl;
+	
+	cout << "s.setUnitsCompleted(9.0);" << endl;
+	s.setUnitsCompleted(9.0);
+	cout << "Completed Units: " << s.getUnitsCompleted() << " [9.0]" << endl;
+	
+	cout << "s.setFullTimeStatus(true);" << endl;
+	s.setFullTimeStatus(true);
+	cout << "Full Time Status: " << s.getFullTimeStatus() << " [true]" << endl;
 
         cout << "-------------------------" << endl;
 	cout << "Testing copy constructor: " << endl;
