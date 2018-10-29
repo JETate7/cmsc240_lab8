@@ -64,7 +64,7 @@ int main() {
 	
 	cout << "s.setFullTimeStatus(false);" << endl;
 	s.setFullTimeStatus(false);
-	cout << "Full Time Status: " << s.getFullTimeStatus() << " [false]" << endl;
+	cout << "Full Time Status: " << s.isFullTime() << " [false]" << endl;
 
 	cout << "-------------------------" << endl;
   	cout << "Testing Course methods: " << endl;
@@ -146,7 +146,7 @@ int main() {
 	
 	cout << "s.setFullTimeStatus(true);" << endl;
 	s.setFullTimeStatus(true);
-	cout << "Full Time Status: " << s.getFullTimeStatus() << " [true]" << endl;
+	cout << "Full Time Status: " << s.isFullTime() << " [true]" << endl;
 
         cout << "-------------------------" << endl;
 	cout << "Testing copy constructor: " << endl;
@@ -184,7 +184,7 @@ int main() {
 
 	cout << "Completed Units: " << s1.getUnitsCompleted() << " [8.0]" << endl;
 
-	cout << "Full Time Status: " << s1.getFullTimeStatus() << " [false]" << endl;
+	cout << "Full Time Status: " << s1.isFullTime() << " [false]" << endl;
 
 	cout << "-------------------------" << endl;
 	cout << "Testing detailed constructor: " << endl;
@@ -222,7 +222,7 @@ int main() {
 
 	cout << "Completed Units: " << s2.getUnitsCompleted() << " [10.5]" << endl;
 
-	cout << "Full Time Status: " << s2.getFullTimeStatus() << " [true]" << endl;
+	cout << "Full Time Status: " << s2.isFullTime() << " [true]" << endl;
 	
 	return 0;
 }
