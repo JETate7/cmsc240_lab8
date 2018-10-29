@@ -33,10 +33,10 @@ int main() {
 	p.setAddress("321 Lane Road");
 	cout << "Address: " << p.getAddress() << " [321 Lane Road]" << endl;
 	
-	cout << "p.setDateOfBirth(25, 12, 1990);" << endl;
-	p.setDateOfBirth(25, 12, 1990);
+	cout << "p.setDateOfBirth(25, 0, 1990);" << endl;
+	p.setDateOfBirth(25, 0, 1990);
 	cout << "DateOfBirth (day): " << p.getDateOfBirth().tm_mday << " [25]" << endl;
-	cout << "DateOfBirth (month): " << p.getDateOfBirth().tm_mon <<  " [11] " << endl;
+	cout << "DateOfBirth (month): " << p.getDateOfBirth().tm_mon <<  " [1] " << endl;
 	cout << "DateOfBirth (year): " << p.getDateOfBirth().tm_year << " [90] " <<endl;
 
 	cout << "p.setPhone(2014822829);" << endl;
