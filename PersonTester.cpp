@@ -13,33 +13,27 @@ int main() {
 	
 	cout << "p.setURID(12341234);" << endl;
 	p.setURID(12341234);
-	cout <<"p.getURID()" << endl;
-	cout << p.getURID() << endl;
+	cout << "URID: " << p.getURID() << " [12341234]" << endl;
 	
 	cout << "p.setNetID(\"jd2jd\");" << endl;
 	p.setNetID("jd2jd");
-	cout <<"p.getNetID()" << endl;
-	cout << p.getNetID() << endl;
+	cout << "NetID: " << p.getNetID() << " [jd2jd]" << endl;
 
 	cout << "p.setFirstName(\"John\");" << endl;
 	p.setFirstName("John");
-	cout <<"p.getFirstName()" << endl;
-	cout << p.getFirstName() << endl;
+	cout << "First Name: " << p.getFirstName() << " [John]" << endl;
 	
 	cout << "p.setLastName(\"Doe\");" << endl;
 	p.setLastName("Doe");
-	cout <<"p.getLastName()" << endl;
-	cout << p.getLastName() << endl;
+	cout << "Last Name: " << p.getLastName() << " [Doe]" << endl;
 
 	cout << "p.setAddress(\"321 Lane Road\");" << endl;
 	p.setAddress("321 Lane Road");
-	cout << "p.getAddress()" << endl;
-	cout << p.getAddress() << endl;
+	cout << "Address: " << p.getAddress() << " [321 Lane Road]" << endl;
 	
 	cout << "p.setDateOfBirth(12, 25, 1990);" << endl;
 	p.setDateOfBirth(12, 25, 1990);
-	cout <<"p.getDateOfBirth()" << endl;
-	cout << p.getDateOfBirth() << endl;
+	cout << "DateOfBirth: " << p.getDateOfBirth() << " []" << endl;
 	
 	cout << "p.setPhone(2014822829);" << endl;
 	p.setPhone(2014822829);
