@@ -96,11 +96,50 @@ int main() {
         s.setCourses(newCourses);
         s.printCourses();
 
+   
         cout << "-------------------------" << endl;
+        cout << "Testing copy constructor: " << endl;
+        cout << "-------------------------" << endl;
+
+        cout << "Student s1(s);" << endl;
+        Student s1(s);
+
+        cout << "Testing getters on s1: " << endl;
+
+        cout << "URID: " << s1.getURID() << " [12341234]" << endl;
+
+        cout << "NetID: " << s1.getNetID() << " [jd2jd]" << endl;
+
+        cout << "First Name: " << s1.getFirstName() << " [John]" << endl;
+
+        cout << "Last Name: " << s1.getLastName() << " [Doe]" << endl;
+
+        cout << "Address: " << s1.getAddress() << " [321 Lane Road]" << endl;
+
+        cout << "DateOfBirth (day): " << s1.getDateOfBirth().tm_mday << " [25]" << endl;
+        cout << "DateOfBirth (month): " << s1.getDateOfBirth().tm_mon << " [11] " << endl;
+        cout << "DateOfBirth (year): " << s1.getDateOfBirth().tm_year << " [90] " <<endl;
+
+        cout <<"s1.getPhone()" << endl;
+        cout << s1.getPhone() << endl;
+
+        cout << "Admit Date (day): " << s1.getAdmitDate().tm_mday << " [8]" << endl;
+        cout << "Admit Date (month): " << s1.getAdmitDate().tm_mon << " [4]" << endl;
+        cout << "Admit Date (year): " << s1.getAdmitDate().tm_year << " [116]" << endl;
+
+        cout << "School: " << s1.getSchool() << " []" << endl;
+
+        cout << "GPA: " << s1.getGPA() << " [3.21]" << endl;
+
+        cout << "Completed Units: " << s1.getUnitsCompleted() << " [8.0]" << endl;
+
+        cout << "Full Time Status: " << s1.isFullTime() << " [false]" << endl;
+
+	cout << "-------------------------" << endl;
         cout << "Testing overwrite: " << endl;
         cout << "-------------------------" << endl;
 
-   cout << "s.setURID(56781234);" << endl;
+        cout << "s.setURID(56781234);" << endl;
         s.setURID(56781234);
         cout << "URID: " << s.getURID() << " [56781234]" << endl;
 
@@ -152,44 +191,7 @@ int main() {
         s.setFullTimeStatus(true);
         cout << "Full Time Status: " << s.isFullTime() << " [true]" << endl;
 
-         cout << "-------------------------" << endl;
-        cout << "Testing copy constructor: " << endl;
-        cout << "-------------------------" << endl;
-
-        cout << "Student s1(s);" << endl;
-        Student s1(s);
-
-        cout << "Testing getters on s1: " << endl;
-
-        cout << "URID: " << s1.getURID() << " [12341234]" << endl;
-
-        cout << "NetID: " << s1.getNetID() << " [jd2jd]" << endl;
-
-        cout << "First Name: " << s1.getFirstName() << " [John]" << endl;
-
-        cout << "Last Name: " << s1.getLastName() << " [Doe]" << endl;
-
-        cout << "Address: " << s1.getAddress() << " [321 Lane Road]" << endl;
-
-        cout << "DateOfBirth (day): " << s1.getDateOfBirth().tm_mday << " [25]" << endl;
-        cout << "DateOfBirth (month): " << s1.getDateOfBirth().tm_mon << " [11] " << endl;
-        cout << "DateOfBirth (year): " << s1.getDateOfBirth().tm_year << " [90] " <<endl;
-
-        cout <<"s1.getPhone()" << endl;
-        cout << s1.getPhone() << endl;
-
-        cout << "Admit Date (day): " << s1.getAdmitDate().tm_mday << " [8]" << endl;
-        cout << "Admit Date (month): " << s1.getAdmitDate().tm_mon << " [4]" << endl;
-        cout << "Admit Date (year): " << s1.getAdmitDate().tm_year << " [116]" << endl;
-
-        cout << "School: " << s1.getSchool() << " []" << endl;
-
-        cout << "GPA: " << s1.getGPA() << " [3.21]" << endl;
-
-        cout << "Completed Units: " << s1.getUnitsCompleted() << " [8.0]" << endl;
-
-        cout << "Full Time Status: " << s1.isFullTime() << " [false]" << endl;
-
+	
         cout << "-------------------------" << endl;
         cout << "Testing detailed constructor: " << endl;
         cout << "-------------------------" << endl;
