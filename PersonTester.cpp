@@ -33,7 +33,8 @@ int main() {
 	
 	cout << "p.setDateOfBirth(12, 25, 1990);" << endl;
 	p.setDateOfBirth(12, 25, 1990);
-	cout << "DateOfBirth: " << p.getDateOfBirth() << " []" << endl;
+	cout << "p.getDateOfBirth()" << endl;
+	cout << p.getDateOfBirth() << endl;
 	
 	cout << "p.setPhone(2014822829);" << endl;
 	p.setPhone(2014822829);
