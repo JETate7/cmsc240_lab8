@@ -45,7 +45,7 @@ Person::~Person() {}
 
 std::string  Person::getFirstName() {return firstName;}
 std::string  Person::getLastName() {return lastName;}
-struct tm    Person::getDateOfBirth() {return dateOfBirth}
+struct tm    Person::getDateOfBirth() {return dateOfBirth;}
 std::string  Person::getAddress() {return Address;}
 std::string  Person::getNetID() {return netID;}
 int          Person::getURID() {return URID;}
@@ -56,7 +56,7 @@ void Person::setFirstName(std::string fname) {firstName = fname;}
 void Person::setLastName(std::string lname) {lastName = lname;}
 void Person::setDateOfBirth(int day, int month, int year) {
         dateOfBirth.tm_mday = day;
-        dateOfBirth.tm_month = month-1;
+        dateOfBirth.tm_mon = month-1;
         dateOfBirth.tm_year = year-1900;
 }
 void Person::setAddress(std::string address) {Address = address;}
@@ -65,5 +65,5 @@ void Person::setURID(int urid)  {URID = urid;}
 void Person::setEmail(std::string email) {eMail = email;}
 void Person::setPhone(long number) {Phone = number;}
 
-
+#endif
 
