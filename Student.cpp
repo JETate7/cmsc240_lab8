@@ -1,5 +1,5 @@
-#ifndef __PERSON_CPP__
-#define __PERSON_CPP__
+#ifndef __STUDENT_CPP__
+#define __STUDENT_CPP__
 
 #include "Person.h"
 #include "Student.h"
@@ -54,3 +54,5 @@ void Student::setSchool(School school) {sch = school;}
 void Student::setGPA(double gpa) {GPA = gpa;}
 void Student::setUnitsCompleted(double units) {completeUnits = units;}
 void Student::setFullTimeStatus(bool isFullTime) {fullTime = isFullTime;}
+
+#endif
