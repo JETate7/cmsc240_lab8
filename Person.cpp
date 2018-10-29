@@ -21,7 +21,7 @@ Person::Person(const Person& other) {
   Phone = other.Phone;
   
   dateOfBirth.tm_mon = other.dateOfBirth.tm_mon;
-  dateOfBirth.tm_mday = other.dateOfBirth.tm_day;
+  dateOfBirth.tm_mday = other.dateOfBirth.tm_mday;
   dateOfBirth.tm_year = other.dateOfBirth.tm_year;
 }
 
