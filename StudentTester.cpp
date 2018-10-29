@@ -17,7 +17,7 @@ int main() {
 	cout << s.getURID() << endl;
 	
 	cout << "s.setNetID(\"jd2jd\");" << endl;
-	s.setFirstName("jd2jd");
+	s.setNetID("jd2jd");
 	cout <<"s.getNetID()" << endl;
 	cout << s.getNetID() << endl;
 
@@ -37,20 +37,44 @@ int main() {
 	cout << s.getAddress() << endl;
 	
 	cout << "s.setDateOfBirth(12, 25, 1990);" << endl;
-	s.setFirstName(12, 25, 1990);
+	s.setDateOfBirth(12, 25, 1990);
 	cout <<"s.getDateOfBirth()" << endl;
 	cout << s.getDateOfBirth() << endl;
 	
 	cout << "s.setPhone(2014822829);" << endl;
-	s.setFirstName(2014822829);
+	s.setPhone(2014822829);
 	cout <<"s.getPhone()" << endl;
 	cout << s.getPhone() << endl;
   
-  
-  cout << "Testing Course methods: " << endl;
+	cout << "
+ 
+  	cout << "Testing Course methods: " << endl;
 	cout << "-------------------------" << endl;
   
-  
+  	cout << "s.addCourse(\"Math\");" << endl;
+	cout << "s.addCourse(\"Biology\");" << endl;
+	cout << "s.addCourse(\"Spanish\");" << endl;
+	s.addCourse("Math");
+	s.addCourse("Biology");
+	s.addCourse("Spanish");
+	
+	cout << "s.printCourses();" << endl;
+	cout << s.printCourses() << endl;
+	
+	cout << "s.removeCourse(\"Spanish\");" << endl;
+	s.removeCourse("Spanish");
+	
+	cout << "s.getCourses();" << endl;
+	cout << s.getCourses() << endl;
+	
+	cout << "s.clearCourses();" << endl;
+	s.clearCourses();
+	
+	cout << "Setting courses from a new course list and printing" << endl;
+	std::list<std::string> newCourses({"French", "Chemistry"});
+	cout <<"s.setCourses(newCourses);" << endl;
+	s.setCourses(newCourses);
+	cout << s.printCourses() << endl;
 
 	cout << "Testing overwrite: " << endl;
 	cout << "-------------------------" << endl;
@@ -60,12 +84,10 @@ int main() {
 	
 	cout << "Student s1(s);" << endl;
 	Student s1(s);
-  
-  
 
 	cout << "Testing detailed constructor: " << endl;
 	cout << "-------------------------" << endl;
 
-	cout << "Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890);" << endl;
-	Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890);
+	cout << "Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, LAW, true, 10.5, 3.45, {"Math", "Art"});" << endl;
+	Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, LAW, true, 10.5, 3.45, {"Math", "Art"});
 }
