@@ -46,8 +46,31 @@ int main() {
 	cout <<"s.getPhone()" << endl;
 	cout << s.getPhone() << endl;
   
-	cout << "
+	cout << "s.setAdmitDate(8, 5, 2016);" << endl;
+	s.setAdmitDate(8, 5, 2016);
+	cout <<"s.getAdmitDate()" << endl;
+	cout << s.getAdmitDate() << endl;
  
+	cout << "s.setSchool(LAW);" << endl;
+	s.setSchool(LAW);
+	cout <<"s.getSchool()" << endl;
+	cout << s.getSchool() << endl;
+	
+	cout << "s.setGPA(3.21);" << endl;
+	s.setGPA(3.21);
+	cout <<"s.getGPA()" << endl;
+	cout << s.getGPA() << endl;
+	
+	cout << "s.setUnitsCompleted(8.0);" << endl;
+	s.setUnitsCompleted(8.0);
+	cout <<"s.getUnitsCompleted()" << endl;
+	cout << s.getUnitsCompleted() << endl;
+	
+	cout << "s.setFullTimeStatus(false);" << endl;
+	s.setFullTimeStatus(false);
+	cout <<"s.getFullTimeStatus()" << endl;
+	cout << s.getFullTimeStatus() << endl;
+	
   	cout << "Testing Course methods: " << endl;
 	cout << "-------------------------" << endl;
   
