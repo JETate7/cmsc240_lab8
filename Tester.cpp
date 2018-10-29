@@ -40,14 +40,18 @@ int main() {
 	p.setFirstName(12, 25, 1990);
 	cout <<"p.getDateOfBirth()" << endl
 	cout << p.getDateOfBirth() << endl;
+	
+	cout << "p.setPhone(2014822829);" << endl;
+	p.setFirstName(2014822829);
+	cout <<"p.getPhone()" << endl
+	cout << p.getPhone() << endl;
 
 	cout << "Testing overwrite: " << endl;
 	cout << "-------------------------" << endl;
 
-
 	cout << "Testing copy constructor: " << endl;
 	cout << "-------------------------" << endl;
-
+	
 	cout << "Person p1(p);" << endl;
 	Person p1(p);
 
@@ -56,6 +60,4 @@ int main() {
 
 	cout << "Person p2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890);" << endl;
 	Person p2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890);
-
-
 }
