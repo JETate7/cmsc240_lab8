@@ -36,7 +36,7 @@ void Student::printCourses() {
     }
     cout << endl;
 }
-void Student:: setCourses(std::list<std::string> newCourses) {courses = newCourses;}
+void Student::setCourses(std::list<std::string> newCourses) {courses = newCourses;}
 void Student::clearCourses() {courses.clear();}
 
 struct tm Student::getAdmitDate() {return dateOfAdmit;}
