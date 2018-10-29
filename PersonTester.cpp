@@ -17,7 +17,7 @@ int main() {
 	cout << p.getURID() << endl;
 	
 	cout << "p.setNetID(\"jd2jd\");" << endl;
-	p.setFirstName("jd2jd");
+	p.setNetID("jd2jd");
 	cout <<"p.getNetID()" << endl;
 	cout << p.getNetID() << endl;
 
@@ -37,12 +37,12 @@ int main() {
 	cout << p.getAddress() << endl;
 	
 	cout << "p.setDateOfBirth(12, 25, 1990);" << endl;
-	p.setFirstName(12, 25, 1990);
+	p.setDateOfBirth(12, 25, 1990);
 	cout <<"p.getDateOfBirth()" << endl;
 	cout << p.getDateOfBirth() << endl;
 	
 	cout << "p.setPhone(2014822829);" << endl;
-	p.setFirstName(2014822829);
+	p.setPhone(2014822829);
 	cout <<"p.getPhone()" << endl;
 	cout << p.getPhone() << endl;
 
