@@ -18,8 +18,8 @@ Student::Student() : Person() {
 Student::Student(const Student& other) : Person(other) {}  // call Person(other) on implementation
 Student::Student(int urid, std::string netid, std::string lname, std::string fname,  int dob_day, int dob_mo, int dob_yr, std::string email, std::string address, long phone, int day_admit, int month_admit, int year_admit, School school, bool is_full_time, double units_completed, double grade, std::list<std::string> courseList) : Person(urid, netid, lname, fname, dob_day, dob_mo, dob_yr, email, address, phone){
 	dateOfAdmit.tm_mday = day_admit;
-	dateOfAdmit.tm_mon = month_admit;
-	dateOfAdmit.tm_year = year_admit;
+	dateOfAdmit.tm_mon = month_admit-1;
+	dateOfAdmit.tm_year = year_admit-1900;
 	sch = school;
 	fullTime = is_full_time;
 	completeUnits = units_completed;
@@ -48,9 +48,9 @@ double Student::getUnitsCompleted() {return completeUnits;}
 bool Student::isFullTime() { return fullTime; }
 
 void Student::setAdmitDate(int day, int month, int year) {
-	dateOfAdmit.tm_mday = day;
-	dateOfAdmit.tm_mon = month;
-	dateOfAdmit.tm_year = year;
+	dateOfAdmit.tm_mday = day ;
+	dateOfAdmit.tm_mon = month - 1;
+	dateOfAdmit.tm_year = year - 1900;
 }
 void Student::setSchool(School school) {sch = school;}
 void Student::setGPA(double gpa) {GPA = gpa;}

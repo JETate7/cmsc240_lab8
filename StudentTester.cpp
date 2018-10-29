@@ -1,4 +1,4 @@
-include <iostream>
+#include <iostream>
 #include "Person.h"
 #include "Student.h"
 #include <list>
@@ -200,9 +200,8 @@ int main() {
 
         cout << "Student s2(11111111, \"ab1cd\", \"last\", \"first\", 31, 10, 2018, \"abcd@richmond.edu\", \"123 happy lane\", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, newCourses);" << endl;
         Student s2(11111111, "ab1cd", "last", "first", 31, 10, 2018, "abcd@richmond.edu", "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, newCourses);
-, "123 happy lane", 1234567890, 15, 8, 2015, Student::LAW, true, 10.5, 3.45, newCourses);
 	
-      cout << "Testing getters on s2: " << endl;
+        cout << "Testing getters on s2: " << endl;
 
         cout << "URID: " << s2.getURID() << " [11111111]" << endl;
 
@@ -234,4 +233,5 @@ int main() {
         cout << "Full Time Status: " << s2.isFullTime() << " [true]" << endl;
 
         return 0;
-}
+};
+
