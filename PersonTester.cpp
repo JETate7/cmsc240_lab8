@@ -33,10 +33,10 @@ int main() {
 	p.setAddress("321 Lane Road");
 	cout << "Address: " << p.getAddress() << " [321 Lane Road]" << endl;
 	
-	cout << "p.setDateOfBirth(25, 0, 1990);" << endl;
-	p.setDateOfBirth(25, 0, 1990);
+	cout << "p.setDateOfBirth(25, 12, 1990);" << endl;
+	p.setDateOfBirth(25, 12, 1990);
 	cout << "DateOfBirth (day): " << p.getDateOfBirth().tm_mday << " [25]" << endl;
-	cout << "DateOfBirth (month): " << p.getDateOfBirth().tm_mon <<  " [1] " << endl;
+	cout << "DateOfBirth (month): " << p.getDateOfBirth().tm_mon <<  " [11] " << endl;
 	cout << "DateOfBirth (year): " << p.getDateOfBirth().tm_year << " [90] " <<endl;
 
 	cout << "p.setPhone(2014822829);" << endl;
@@ -103,7 +103,7 @@ int main() {
 
         cout << "p.setPhone(213434534);" << endl;
         p.setPhone(213434534);
-        cout <<"p.getPhone()" << endl;
+        cout <<"Phone: " << p.getPhone() << " [213434534]" << endl;
 
 	cout << "-------------------------" << endl;
 	cout << "Testing detailed constructor: " << endl;
@@ -129,8 +129,7 @@ int main() {
         cout << "DateOfBirth (year): " << p2.getDateOfBirth().tm_year << " [118] " <<endl;
 	cout << "Email: " << p2.getEmail() << " [abcd@richmond.edu]" << endl;
 
-        cout <<"p2.getPhone()" << endl;
-        cout << p2.getPhone() << endl;
+        cout << "Phone: " << p2.getPhone() << " [1234567890]" << endl;
 
 
 	return 0;
